@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+  color: white;
+  font-family: "poppins", sans-serif;
+  margin: 1rem 1rem;
+}
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+header a {
+  text-decoration: none;
+}
+.headericon img {
+  width: 100%;
+}
+.headerimage {
+  width: 80px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+}
+.icon {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.bxn {
+  background-color: #fdb915;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+}
+.bxn a {
+  font-size: 1.3rem;
+}
+.icon {
+}
+
+.rotate {
+  border-radius: 100%;
+  border: 2px solid green;
+  animation: ball 3s infinite linear;
+}
+.bgimage {
+  background-image: linear-gradient(to left, #5576cf 70%, #bd8d19, #908366);
+  margin: 4rem 0;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.bgimage h1 {
+  font-size: 2.8rem;
+  font-family: poppins;
+  font-weight: bold;
+}
+.bgimage p {
+  font-size: 1.7rem;
+  font-family: poppins;
+  font-weight: bold;
+}
+.about {
+  display: flex;
+  align-items: center;
+}
+.abouttext {
+  width: 50%;
+}
+.abouttext img {
+  width: 100%;
+  border-bottom: 4px solid #feb20f;
+}
+.abouttext p {
+  color: #224093;
+  font-size: 1rem;
+  padding: 10px 0;
+  font-family: poppins;
+}
+.aboutimg {
+  width: 50%;
+}
+.aboutimg1 {
+  width: 100%;
+}
+.section1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 1.5rem 0;
+}
+.line {
+  width: 60%;
+}
+.maiden {
+  display: flex;
+
+  align-items: center;
+}
+.maiden p {
+  font-size: 1.5rem;
+  color: blue;
+}
+.date {
+  display: flex;
+
+  align-items: center;
+}
+.date p {
+  font-size: 1.2rem;
+  color: blue;
+}
+
+@keyframes ball {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button {
+  display: flex;
+  gap: 1rem;
+}
+.ticket {
+  font-size: 1.3rem;
+  color: #224093;
+  background-color: #fdb915;
+  border: none;
+}
+.sponsor {
+  font-size: 1.3rem;
+  color: 2rem;
+  background-color: transparent;
+  border: 2px solid #224093;
+}
+.button button {
+  width: 100%;
+  height: 3rem;
+}
+
+.venuetext h1 {
+  font-size: 4rem;
+  border-bottom: 4px solid #feb20f;
+  color: #224093;
+  font-family: poppins;
+  margin: 2rem 0;
+}
+.venueimage {
+  position: relative;
+  width: 100%;
+}
+.venueimage img {
+  width: 100%;
+  height: 27rem;
+}
+.venueimagetext {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.speaker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #feb20f;
+  margin: 2rem 0;
+}
+.speaker h1 {
+  font-size: 4rem;
+  color: #224093;
+  font-family: poppins;
+}
+.speaker p {
+  color: #224093;
+  font-family: poppins;
+}
+.speakersection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  text-align: center;
+}
+.tickettext h1 {
+  font-size: 4rem;
+  border-bottom: 4px solid #feb20f;
+  color: #224093;
+  font-family: poppins;
+  margin: 2rem 0;
+  margin-right: 9rem;
+}
+.speakersection img {
+  width: 100%;
+}
+.speakersection h3 {
+  color: #224093;
+  padding: 1rem 0 0 0;
+  font-family: sans-serif;
+  font-weight: 500;
+  width: 90%;
+  font-size: 1.85rem;
+}
+.speakersection p {
+  color: #5f4093;
+  font-size: 1.19rem;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.ticketflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 9rem;
+  margin-top: 4rem;
+}
+.ticketflex p {
+  color: black;
+  width: 40%;
+}
+.ticketflex img {
+  width: 28%;
+}
+.prices {
+  text-align: center;
+  padding: 4rem 0;
+}
+.prices h3 {
+  font-size: 1.6rem;
+  color: #224093;
+}
+.card-container {
+  display: flex;
+
+  justify-content: space-between;
+}
+.card {
+  width: 31%;
+  height: 540px;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.card:hover {
+  background-color: #008000;
+  color: white;
+}
+
+.card2 {
+  width: 31%;
+  margin-top: -30px;
+  background-color: #ffcd55;
+  padding: 1rem;
+
+  color: #224092;
+  height: 570px;
+  border-radius: 20px;
+}
+.card2 .divide {
+  margin-top: 4rem;
+}
+.card3 {
+  width: 31%;
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  height: 540px;
+}
+.card3:hover {
+  background-color: #224092;
+  color: white;
+}
+.card-container ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+.card-container ul li {
+  margin: 1rem 0;
+  font-family: sans-serif;
+}
+
+.divide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.divide p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.divide button {
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+.card .divide {
+  margin-top: 7rem;
+}
+.card3 button {
+  border: none;
+
+  background-color: #ffcd55;
+}
+
+.card button {
+  background-color: #ffcd55;
+  border: none;
+}
+.card2 button {
+  border: none;
+  background-color: #224092;
+  color: white;
+}
+.sponsortext {
+  font-size: 2rem;
+
+  color: #224093;
+  font-family: poppins;
+  margin: 8rem 0 2rem 0;
+}
+.sponsorimage {
+  display: flex;
+}
+
+.sponsorimage img{
+  width: 15%;
+  margin-right: 50px;
+}
+
+.smileygirl {
+  width: 100%;
+  height: 30rem;
+  padding: 2rem 0;
+  background-color: #132351;
+  position: relative;
+  margin: 1rem 0;
+}
+.smileytext {
+  position: absolute;
+  width: 30%;
+  top: 35%;
+  left: 5%;
+}
+.smileytext h2 {
+  font-size: 2.4rem;
+  padding: 10px 0;
+}
+.smileytext p {
+  font-size: 1rem;
+}
+.image1 {
+  position: absolute;
+  width: 33%;
+  right: 10%;
+}
+.image2 {
+  position: absolute;
+  right: 5%;
+  width: 10%;
+}
+.image3 {
+  position: absolute;
+  width: 13%;
+  left: 35%;
+  top: 55%;
+}
+.partner {
+  font-size: 1.4rem;
+margin-top: 2rem;
+  color: #224093;
+  font-family: poppins;
+  padding: 0 2rem;
+  
+}
+.partnerimage{
+  display: flex;
+  margin-right: 50px;
+}
+.footer{
+  padding: 2rem;
+  background-color: #132351;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerright{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footerright img{
+  width: 15%;
+  margin-right: 15px;
+}
+.footer ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .maiden p{
+    font-size: 0.9rem;
+  }
+  .date p{
+    font-size: 0.7rem;
+  } 
+  .abouttext{
+   
+    width: 35%;
+  }
+ .abouttext p{
+ 
+  font-size: 0.8rem;
+ }
+  
+  .aboutimg{
+    width: 65%;
+  }
+  .speakersection{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 0rem;
+  }
+  header {
+    width: 100%;
+    position: relative;
+   
+    padding: 0px 0px;
+  }
+  .icon {
+    display: block;
+    color: blue;
+    
+  }
+ 
+  .headericon {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .headericon img {
+    width: 100%;
+    
+  }
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+   
+  .button {
+    flex-direction: column;
+  }
+  .button button {
+    width: 100%;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .abouttext {
+    width: 100%;
+  }
+  .aboutimg {
+    width: 100%;
+  }
+  .speakersection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .speakersection h3 {
+    color: #224093;
+    font-size: 1.5rem;
+    font-family: poppins;
+    font-weight: 600;
+  }
+  .speakersection p {
+    font-size: 1rem;
+    font-family: poppins;
+  }
+
+  .bgimage h1 {
+    font-size: 2rem;
+    font-family: poppins;
+    font-weight: bold;
+  }
+  .bgimage p {
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: bold;
+  }
+  .venuetext h1 {
+    font-size: 2rem;
+    border-bottom: 4px solid #feb20f;
+    color: #224093;
+    font-family: poppins;
+    margin: 2rem 0;
+  }
+  .venueimage img {
+    width: 100%;
+    height: 20rem;
+  }
+  .venueimagetext {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .speaker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #feb20f;
+    margin: 2rem 0;
+  }
+  .speaker h1 {
+    font-size: 1.5rem;
+    color: #224093;
+    font-family: poppins;
+  }
+  .speaker p {
+    color: #224093;
+    font-family: poppins;
+  }
+  .tickettext h1 {
+    font-size: 2rem;
+    border-bottom: 4px solid #feb20f;
+    color: #224093;
+    font-family: poppins;
+    margin: 2rem 0;
+    margin-right: 4rem;
+  }
+  .ticketflex {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .ticketflex p {
+    width: 100%;
+  }
+  .ticketflex img {
+    width: 80%;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card,
+  .card2,
+  .card3 {
+    width: 100%;
+  }
+  .card2 {
+    margin-top: 0;
+  }
+  .card {
+    background-color: green;
+    color: white;
+  }
+  .card3 {
+    background-color: blue;
+    color: white;
+  }
+  .smileygirl {
+    width: 100%;
+    height: 30rem;
+    padding: 2rem 0;
+    background-color: #132351;
+    position: relative;
+    margin: 4rem 0;
+  }
+  .smileytext {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 2%;
+  }
+  .smileytext h2 {
+    font-size: 2.4rem;
+    padding: 10px 0;
+  }
+  .smileytext p {
+    font-size: 1rem;
+  }
+  .image1 {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    right: 20%;
+  }
+  .image2 {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    width: 20%;
+  }
+  .image3 {
+    position: absolute;
+    width: 20%;
+    left: 5%;
+    top: 70%;
+  }
+  .footer{
+    padding: 2rem;
+    background-color: #132351;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footerright{
+    display: flex;
+    align-items: center;
+   gap: 1rem;
+    flex-direction: column;
+  }
+  .footerright img{
+    width: 15%;
+    margin-right: 15px;
+  }
+  .footer ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+}
